@@ -1,0 +1,133 @@
+/* Reset default margin dan padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling Body */
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    45deg,
+    #000000,
+    #ffd700,
+    #ffa500
+  ); /* Gradasi hitam ke kuning-orange */
+  scroll-behavior: smooth; /* Smooth scroll behavior */
+}
+
+/* Menu Navigasi */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+nav ul li {
+  margin: 0 15px;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  display: block;
+}
+
+/* Shade untuk Menu yang Aktif */
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #ffa500; /* Kuning Oranye */
+  border-radius: 5px;
+}
+
+/* Styling untuk Title Section */
+.title-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  height: 60%;
+  width: 100%;
+}
+
+/* Flex container untuk Judul Besar dan Logo */
+.main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 300px; /* Memberikan ruang lebih antara logo dan teks */
+  margin-right: 50px; /* Memberikan ruang agar judul lebih rata tengah */
+  position: relative;
+}
+
+.main-title h1 {
+  margin: 5px 0;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* Logo Angkatan dan Shade Kuning */
+.logo-container {
+  background: linear-gradient(
+    45deg,
+    #ffd700,
+    #ffa500
+  ); /* Gradasi Kuning-Oranye */
+  border-radius: 50%; /* Pastikan lingkaran */
+  width: 300px; /* Ukuran lingkaran lebih besar (4x lebih besar dari sebelumnya) */
+  height: 300px; /* Sama dengan width untuk memastikan lingkaran */
+  position: absolute;
+  left: 80px; /* Geser logo ke kanan lebih banyak */
+  top: 50%;
+  transform: translateY(-50%); /* Centering secara vertikal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1; /* Agar logo berada di bawah judul */
+}
+
+.logo {
+  width: 180px; /* Ukuran logo lebih besar sesuai dengan lingkaran */
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+footer p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* Styling Section */
+section {
+  padding: 100px 20px;
+  width: 100%;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}

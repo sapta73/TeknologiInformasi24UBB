@@ -1,0 +1,91 @@
+/* project.css */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #ffc107;
+  text-shadow: 0 0 10px #ffc107;
+}
+
+.slide {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+#slide1 {
+  background: linear-gradient(to bottom, black, #ffc107);
+}
+
+#slide2 {
+  background: linear-gradient(to top, #ffc107, black);
+}
+
+#slide3 {
+  background: linear-gradient(to bottom, #ffc107, transparent, black);
+}
+
+h1 {
+  font-size: 5rem;
+  color: #ffc107;
+  text-shadow: 0 0 10px #ffc107;
+  margin: 0;
+}
+
+h2 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 0 0 10px white;
+  margin: 10px 0;
+}
+
+.image-box img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #ffc107;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-box img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px #ffc107;
+}
+
+.logo-slide img {
+  width: 200px;
+  filter: drop-shadow(0 0 10px #ffc107);
+}
